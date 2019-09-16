@@ -1,0 +1,68 @@
+{
+  "name": "isEqualWith",
+  "version": "0.0.1",
+  "description": "Like lodash isEqualWith but for shallow equal.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js test",
+    "test": "jest .",
+    "prepare": "npm run flow:check && npm run pretty && npm run lint && npm run test",
+    "travis": "npm run flow:check && npm run lint && npm run test",
+    "pretty": "prettier --write --tab-width 2 'test/**/*.js' '*.{js,json,js.flow,md}'",
+    "precommit": "lint-staged",
+    "flow:check": "flow check"
+  },
+  "lint-staged": {
+    "*.{js,json,js.flow,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/gpdife/isEqualWith.git"
+  },
+  "repository": "gpdife/isEqualWith",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.js.flow",
+    "index.original.js"
+  ],
+  "keywords": [
+    "shallowequal",
+    "shallow",
+    "equal",
+    "isequal",
+    "compare",
+    "isequalwith"
+  ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "plugins": [
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "eslint": "6.2.2",
+    "eslint-plugin-jest": "22.15.2",
+    "flow-bin": "0.106.2",
+    "husky": "3.0.4",
+    "jest": "24.9.0",
+    "lint-staged": "9.2.5",
+    "prettier": "1.18.2"
+  }
+}
