@@ -1,5 +1,5 @@
 {
-  "name": "isEqualWith",
+  "name": "isequalwith",
   "version": "0.0.1",
   "description": "Like lodash isEqualWith but for shallow equal.",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "jest .",
     "prepare": "npm run flow:check && npm run pretty && npm run lint && npm run test",
     "travis": "npm run flow:check && npm run lint && npm run test",
-    "pretty": "prettier --write --tab-width 2 'test/**/*.js' '*.{js,json,js.flow,md}'",
+    "pretty": "prettier --write --tab-width 2 \"test/*.js\" \"*.{js,json,js.flow,md}\"",
     "precommit": "lint-staged",
     "flow:check": "flow check"
   },
@@ -18,12 +18,11 @@
       "git add"
     ]
   },
-  "author": {
-    "name": "",
-    "email": "",
-    "url": "https://github.com/gpdife/isEqualWith.git"
+  "author": " (https://github.com/gpdife/isEqualWith.git)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpdife/isEqualWith.git"
   },
-  "repository": "gpdife/isEqualWith",
   "license": "MIT",
   "files": [
     "index.js",
@@ -64,5 +63,12 @@
     "jest": "24.9.0",
     "lint-staged": "9.2.5",
     "prettier": "1.18.2"
+  },
+  "bugs": {
+    "url": "https://github.com/gpdife/isEqualWith/issues"
+  },
+  "homepage": "https://github.com/gpdife/isEqualWith#readme",
+  "directories": {
+    "test": "test"
   }
 }
