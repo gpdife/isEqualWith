@@ -1,6 +1,6 @@
 {
   "name": "isequalwith",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Like lodash isEqualWith but for shallow equal.",
   "main": "index.js",
   "scripts": {
